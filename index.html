@@ -7,9 +7,78 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <script src="" async defer></script>
+    <header class="text-uppercase">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="d-flex justify-content-md-around collapse navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul
+              class="
+                navbar-nav
+                w-75
+                justify-content-md-around
+                align-items-baseline
+              "
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="#">QC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Merch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Connect</a>
+              </li>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+                <li><a class="dropdown-item" href="#">Merch</a></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
+                <li><a class="dropdown-item" href="#">Connect</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/app.js" async defer></script>
   </body>
 </html>

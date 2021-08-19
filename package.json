@@ -19,5 +19,8 @@
   "homepage": "https://github.com/desiatcodaniel/qc-web#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0"
   }
 }
