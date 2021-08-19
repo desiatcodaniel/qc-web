@@ -11,11 +11,17 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="text-uppercase">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark d-flex flex-column"
+      >
         <div class="container">
           <button
             class="navbar-toggler"
@@ -33,10 +39,14 @@
               class="
                 navbar-nav
                 w-100
+                fs-4
                 justify-content-md-around
                 align-items-baseline
               "
             >
+              <li class="navbar-brand d-md-none lobster">
+                <a class="nav-link text-light fs-1" href="#">QC</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
@@ -46,8 +56,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Team</a>
               </li>
-              <li class="navbar-brand">
-                <a class="nav-link" href="#">QC</a>
+              <li class="navbar-brand d-none d-md-flex lobster">
+                <a class="nav-link text-light display-4" href="#">QC</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Merch</a>
@@ -58,17 +68,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Connect</a>
               </li>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Home</a></li>
-                <li><a class="dropdown-item" href="#">About</a></li>
-                <li><a class="dropdown-item" href="#">Team</a></li>
-                <li><a class="dropdown-item" href="#">Merch</a></li>
-                <li><a class="dropdown-item" href="#">News</a></li>
-                <li><a class="dropdown-item" href="#">Connect</a></li>
-              </ul>
             </ul>
           </div>
         </div>
