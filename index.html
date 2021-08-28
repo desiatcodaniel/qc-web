@@ -21,9 +21,9 @@
   <body>
     <header class="text-uppercase">
       <nav
-        class="navbar navbar-expand-md navbar-dark bg-dark d-flex flex-column"
+        class="navbar navbar-expand-lg navbar-dark bg-dark d-flex flex-column"
       >
-        <div class="container">
+        <div class="container-fluid container-md">
           <button
             class="navbar-toggler"
             type="button"
@@ -35,7 +35,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="d-md-none">
+          <div class="d-lg-none">
             <img
               class="navbar-brand img-fluid mini-logo"
               src="./src/images/logo_gold_2.png"
@@ -51,8 +51,8 @@
                 h-100
                 fs-5
                 d-flex
-                justify-content-md-around
-                align-items-md-center
+                justify-content-lg-around
+                align-items-lg-center
               "
             >
               <li class="nav-item">
@@ -64,10 +64,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Team</a>
               </li>
-              <li class="d-none d-md-flex justify-content-center mx-0 logo">
+              <li class="d-none d-lg-flex justify-content-center mx-0 logo">
                 <img
                   src="./src/images/logo_gold_2.png"
-                  class="img-fluid navbar-brand"
+                  class="img-fluid navbar-brand mx-lg-auto"
                   alt=""
                 />
               </li>
@@ -86,7 +86,8 @@
       </nav>
     </header>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./src/app.js" async defer></script>
   </body>
 </html>
