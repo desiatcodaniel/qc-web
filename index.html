@@ -13,6 +13,10 @@
     />
     <link
       rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
     <link rel="stylesheet" href="https://use.typekit.net/niz3jkn.css" />
@@ -85,6 +89,101 @@
         </div>
       </nav>
     </header>
+    <main>
+      <!-- Carousel for Players-->
+      <div class="container border rounded my-5">
+        <div
+          id="carouselFeaturedPages"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="2000"
+        >
+          <!--Carousel item indices-->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="carouselFeaturedPages"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1 - Road to TI"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="carouselFeaturedPages"
+              data-bs-slide-to="1"
+              aria-label="Slide 2 - Interview with MSS"
+            ></button>
+          </div>
+          <!--Carousel items-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./src/images/carousel1.jpeg"
+                class="d-block w-100"
+                alt="Road to TI Picture"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./src/images/carousel2.jpg"
+                class="d-block w-100"
+                alt="Interview with MSS"
+              />
+            </div>
+          </div>
+          <!--Carousel Previous button-->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFeaturedPages"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <!--Carousel Next button-->
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFeaturedPages"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--Social Announcement-->
+      <div class="announcement text-center p-3">
+        <div class="container row m-auto d-flex align-items-center">
+          <div
+            class="
+              col-12 col-md-6
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <h2 class="font-weight-bold">
+              FOR MORE NEWS, FOLLOW US ON SOCIAL:
+            </h2>
+          </div>
+          <div
+            class="
+              col-12 col-md-6
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <i class="mx-2 fa fa-instagram fa-5x"></i>
+            <i class="mx-2 fa fa-twitter fa-5x"></i>
+            <i class="mx-2 fa fa-facebook fa-5x"></i>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
