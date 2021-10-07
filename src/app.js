@@ -31,7 +31,7 @@ const players = [
     realName: "Rodrigo Santos",
     playerRole: "Offlaner/Pos 3",
     memberPic: "./src/images/NEW_LELIS.png",
-    details: `"Duo language speaker (portugese, english) and BASED guitarist.”`,
+    details: `"Duo language speaker (portugese, english) and BASED guitarist."`,
     twitter: "lelisdota",
   },
   {
@@ -47,7 +47,7 @@ const players = [
     realName: "Khezu",
     playerRole: "Coach",
     memberPic: "./src/images/NEW_KHEZU.png",
-    details: `“shoutout to all the 4's and 5's that are chill”`,
+    details: `“Shoutout to all the 4's and 5's that are chill”`,
     twitter: "KheZu",
   },
   {
@@ -55,7 +55,7 @@ const players = [
     realName: "Jack Chen",
     playerRole: "Manager",
     memberPic: "./src/images/KBBQ.png",
-    details: `“handsdown, the heart of the team, except when he picks veno.”`,
+    details: `“Hands down, the heart of the team, except when he picks veno.”`,
     twitter: "KBBQDotA",
   },
 ];
