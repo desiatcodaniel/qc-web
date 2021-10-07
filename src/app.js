@@ -1,3 +1,11 @@
+import * as svg from "./images/NEW_LOA.png";
+import * as mss from "./images/NEW_MSS.png";
+import * as quinn from "./images/NEW_QUINN.png";
+import * as leslao from "./images/NEW_LELIS.png";
+import * as yawar from "./images/NEW_YAWAR.png";
+import * as khezu from "./images/NEW_KHEZU.png";
+import * as kbbq from "./images/KBBQ.png";
+
 const cardHolder = document.querySelector("#cardHolder");
 
 const players = [
@@ -5,7 +13,7 @@ const players = [
     inGameName: "SVG",
     realName: "Avery Silverman",
     playerRole: "Support/Pos 5/Captain",
-    memberPic: "./src/images/NEW_LOA.png",
+    memberPic: svg.default,
     details: `“Want a lesson on mental fortitude and some ways to improve the DPC? Listen to THE Captain:
     <a href="https://t.co/nBlmJw1S0G" target="_blank">https://t.co/nBlmJw1S0G</a>”`,
     twitter: "SVGDota",
@@ -14,7 +22,7 @@ const players = [
     inGameName: "MSS",
     realName: "Arif Anwar",
     playerRole: "Support/Pos 4",
-    memberPic: "./src/images/NEW_MSS.png",
+    memberPic: mss.default,
     details: `“Dota. Gym. Anime. Repeat.”`,
     twitter: "MSSDota",
   },
@@ -22,7 +30,7 @@ const players = [
     inGameName: "QUINN",
     realName: "Quinn Callahan",
     playerRole: "Midlane/Pos 2",
-    memberPic: "./src/images/NEW_QUINN.png",
+    memberPic: quinn.default,
     details: `“Quinn always gets the rune because Quinn checks one and CCNC checks the other.”`,
     twitter: "ccncdota2",
   },
@@ -30,7 +38,7 @@ const players = [
     inGameName: "LESLAO",
     realName: "Rodrigo Santos",
     playerRole: "Offlaner/Pos 3",
-    memberPic: "./src/images/NEW_LELIS.png",
+    memberPic: leslao.default,
     details: `"Duo language speaker (portugese, english) and BASED guitarist."`,
     twitter: "lelisdota",
   },
@@ -38,7 +46,7 @@ const players = [
     inGameName: "YAWAR",
     realName: "Yawar Hassan",
     playerRole: "Safelane Carry/Pos 1",
-    memberPic: "./src/images/NEW_YAWAR.png",
+    memberPic: yawar.default,
     details: `“@OG @SumaaaaiL is YawaR's brother, not the other way around.”`,
     twitter: `YawaR_YS`,
   },
@@ -46,7 +54,7 @@ const players = [
     inGameName: "Khezu",
     realName: "Khezu",
     playerRole: "Coach",
-    memberPic: "./src/images/NEW_KHEZU.png",
+    memberPic: khezu.default,
     details: `“Shoutout to all the 4's and 5's that are chill”`,
     twitter: "KheZu",
   },
@@ -54,7 +62,7 @@ const players = [
     inGameName: "KBBQ",
     realName: "Jack Chen",
     playerRole: "Manager",
-    memberPic: "./src/images/KBBQ.png",
+    memberPic: kbbq.default,
     details: `“Hands down, the heart of the team, except when he picks veno.”`,
     twitter: "KBBQDotA",
   },
@@ -62,7 +70,7 @@ const players = [
 const cardBaseConstractor = players.map((plr, index) => {
   if (index < 2 || index > 4) {
     return `
-    <div class="col-lg-6 col-12  d-md-flex align-items-center justify-content-center">
+    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
     <div class="cards">
     <div class="cardFront m-md-0" id="${plr.inGameName}">
         <img src="${plr.memberPic}" alt="" class="playerImg">
