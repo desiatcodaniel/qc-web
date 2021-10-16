@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Quincy Crew</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -220,20 +220,20 @@
             <a
               class="btn"
               href="https://www.instagram.com/quincycrewdota2/?hl=en"
-              ><i class="fa fa-instagram fa-5x"></i
+              ><i class="fa fa-instagram fa-4x"></i
             ></a>
             <a
               class="btn"
               href="https://www.facebook.com/Quincy-Crew-dota2-116477169752619/"
-              ><i class="fa fa-facebook fa-5x"></i
+              ><i class="fa fa-facebook fa-4x"></i
             ></a>
             <a
               class="btn"
               href="https://twitter.com/Quincy_Crew?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              ><i class="fa fa-twitter fa-5x"></i
+              ><i class="fa fa-twitter fa-4x"></i
             ></a>
             <a class="btn" href="https://weibo.com/QuincyCrew"
-              ><i class="fa fa-weibo fa-5x"></i
+              ><i class="fa fa-weibo fa-4x"></i
             ></a>
           </div>
         </div>
@@ -267,7 +267,12 @@
       <div id="modalCont" class="modalCont">
         <div id="modal1">
           <div id="modalInfoHolder">
-            <img src="" alt="" id="playerImgModal" class="me-5" />
+            <img
+              src=""
+              alt=""
+              id="playerImgModal"
+              class="d-none d-sm-inline-block me-5"
+            />
             <div class="row d-flex justify-content-center align-items-center">
               <div class="pe-3">
                 <h2 id="inGameNameModal">inGameName</h2>
@@ -282,12 +287,7 @@
                 ></a>
               </div>
               <div class="align-self-baseline">
-                <blockquote class="blockquote" id="details">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus esse sint, aliquid doloremque quibusdam repudiandae
-                  accusamus praesentium, temporibus quo fuga nulla quaerat
-                  laborum deserunt. Rem culpa in optio nisi suscipit?
-                </blockquote>
+                <blockquote class="blockquote" id="details"></blockquote>
               </div>
             </div>
           </div>
@@ -295,7 +295,23 @@
       </div>
       <!--BIO-->
       <div class="container p-5" id="about">
-        <p class="text-center h3">
+        <p class="d-none d-md-block text-center h3">
+          Having formed in 2018, the crew is named after their team house on
+          Quincy Street. From the group’s founding, this NA Dota 2 team has had
+          a strong showing ranking in the Top 10 of their group in both The
+          International 2018 and The International 2019. Currently ranked #1 in
+          the most recent NA DPC season, Quincy Crew has qualified to compete at
+          The International 2021.
+        </p>
+        <p class="d-none d-sm-block d-md-none text-center h5">
+          Having formed in 2018, the crew is named after their team house on
+          Quincy Street. From the group’s founding, this NA Dota 2 team has had
+          a strong showing ranking in the Top 10 of their group in both The
+          International 2018 and The International 2019. Currently ranked #1 in
+          the most recent NA DPC season, Quincy Crew has qualified to compete at
+          The International 2021.
+        </p>
+        <p class="d-sm-none text-center">
           Having formed in 2018, the crew is named after their team house on
           Quincy Street. From the group’s founding, this NA Dota 2 team has had
           a strong showing ranking in the Top 10 of their group in both The
@@ -307,9 +323,17 @@
 
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-md-6 text-end">
-            <h3>Join us on discord</h3>
-            <a href="https://discord.gg/9NtbTvW7yD" target="_blank"
+          <div class="col-12 col-md-6 text-center text-lg-end">
+            <h3>
+              Join us on
+              <a href="https://discord.gg/9NtbTvW7yD" target="_blank"
+                >discord</a
+              >
+            </h3>
+            <a
+              class="d-none d-lg-block"
+              href="https://discord.gg/9NtbTvW7yD"
+              target="_blank"
               ><h3>https://discord.gg/9NtbTvW7yD</h3>
             </a>
           </div>
@@ -329,7 +353,7 @@
               <a
                 href="https://www.dota2.com/esports/ti10/schedule"
                 target="_blank"
-                >DOTA 2 THE INTERNATIONAL 10 Quincy crew SCHEDULE</a
+                >Thank you to our fans and supporters, our crew</a
               >
             </h2>
           </div>
@@ -338,7 +362,7 @@
       <div class="container rounded my-5 py-5">
         <a href="https://www.dota2.com/esports/ti10/schedule" target="_blank">
           <img
-            src="./src/images/groups.jpg"
+            src="./src/images/thanks.jpg"
             alt="Quincy Crew Match Schedule"
             class="img-fluid rounded"
           />
@@ -351,7 +375,14 @@
     <footer class="site-footer bg-black text-white p-3 mt-3">
       <div class="container pt-3">
         <div class="row d-flex align-items-start">
-          <div class="col-sm-3 col-offset-1 d-flex justify-content-center">
+          <div
+            class="
+              d-none d-md-flex
+              col-md-3 col-offset-1
+              d-flex
+              justify-content-center
+            "
+          >
             <img
               src="./src/images/logo_gold_2.png"
               alt=""
@@ -360,7 +391,7 @@
           </div>
           <div
             class="
-              col-3 col-sm-3
+              col-4 col-sm-4 col-md-3
               d-flex
               justify-content-center
               flex-column
@@ -374,30 +405,40 @@
               <li><a href="./news.html">News</a></li>
             </ul>
           </div>
-          <div class="col-5 col-sm-3 text-center">
+          <div class="col-4 col-sm-4 col-md-3 text-center">
             <h5>Social</h5>
             <a
               class="btn"
               href="https://www.instagram.com/quincycrewdota2/?hl=en"
-              ><i class="fa fa-instagram fa-2x"></i
+              ><i class="d-inline d-sm-none fa fa-instagram"></i
+              ><i class="d-none d-sm-inline fa fa-instagram fa-2x"></i
             ></a>
             <a
               class="btn"
               href="https://www.facebook.com/Quincy-Crew-dota2-116477169752619/"
-              ><i class="fa fa-facebook fa-2x"></i
+              ><i class="d-inline d-sm-none fa fa-facebook"></i
+              ><i class="d-none d-sm-inline fa fa-facebook fa-2x"></i
             ></a>
             <a
               class="btn"
               href="https://twitter.com/Quincy_Crew?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              ><i class="fa fa-twitter fa-2x"></i
+              ><i class="d-inline d-sm-none fa fa-twitter"></i
+              ><i class="d-none d-sm-inline fa fa-twitter fa-2x"></i
             ></a>
             <a class="btn" href="https://weibo.com/QuincyCrew"
-              ><i class="fa fa-weibo fa-2x"></i
+              ><i class="d-inline d-sm-none fa fa-weibo"></i
+              ><i class="d-none d-sm-inline fa fa-weibo fa-2x"></i
+            ></a>
+          </div>
+          <div class="col-4 col-sm-4 col-md-3 text-center">
+            <h5>Email us</h5>
+            <a href="mailto:social@quincycrew.com"
+              ><i class="fa fa-envelope fa-3x"></i
             ></a>
           </div>
         </div>
       </div>
-      <div class="w-100 text-end">
+      <div class="w-100 text-center text-sm-end">
         <small>&copy; Copyright 2021, Quincy Crew</small>
       </div>
     </footer>

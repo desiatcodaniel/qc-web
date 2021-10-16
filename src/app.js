@@ -72,15 +72,15 @@ const cardBaseConstractor = players.map((plr, index) => {
     return `
     <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
     <div class="cards">
-    <div class="cardFront m-md-0" id="${plr.inGameName}">
-        <img src="${plr.memberPic}" alt="" class="playerImg">
+    <div class="cardFront" id="${plr.inGameName}">
+        <img src="${plr.memberPic}" alt="" class="playerImg img-fluid">
     </div>
   </div>`;
   } else {
-    return `<div class="col-12 col-lg-3 d-md-flex align-items-center justify-content-center">
+    return `<div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
     <div class="cards">
     <div class="cardFront" id="${plr.inGameName}">
-        <img src="${plr.memberPic}" alt="" class="playerImg">
+        <img src="${plr.memberPic}" alt="" class="playerImg img-fluid">
     </div>
   </div>`;
   }
