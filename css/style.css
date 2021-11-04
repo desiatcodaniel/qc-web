@@ -11,6 +11,20 @@ body {
   font-family: termina, sans-serif;
   color: antiquewhite;
 }
+.work-in-progress {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.announcement-img {
+  width: 70%;
+}
 
 .logo {
   width: 80px;
@@ -165,4 +179,34 @@ a:active {
 
 .news-link {
   text-decoration: underline;
+}
+
+/*Breakpoint for announcement*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 124px) {
+  h2 {
+    font-size: 0.7rem;
+    margin-top: 8px;
+  } /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  } /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2rem;
+  } /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2.5rem;
+  } /*1rem = 16px*/
 }
