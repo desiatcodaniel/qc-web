@@ -11,20 +11,6 @@ body {
   font-family: termina, sans-serif;
   color: antiquewhite;
 }
-.work-in-progress {
-  background-color: rgba(0, 0, 0, 0.95);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  z-index: 999;
-}
-.announcement-img {
-  width: 70%;
-}
 
 .logo {
   width: 80px;

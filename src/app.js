@@ -1,7 +1,6 @@
-import * as svg from "./images/NEW_LOA.png";
-import * as mss from "./images/NEW_MSS.png";
+import * as ponlo from "./images/PONLO.png";
+import * as milan from "./images/MILAN.png";
 import * as quinn from "./images/NEW_QUINN.png";
-import * as leslao from "./images/NEW_LELIS.png";
 import * as yawar from "./images/NEW_YAWAR.png";
 import * as khezu from "./images/NEW_KHEZU.png";
 import * as kbbq from "./images/KBBQ.png";
@@ -10,21 +9,28 @@ const cardHolder = document.querySelector("#cardHolder");
 
 const players = [
   {
-    inGameName: "SVG",
-    realName: "Avery Silverman",
-    playerRole: "Support/Pos 5/Captain",
-    memberPic: svg.default,
-    details: `“Want a lesson on mental fortitude and some ways to improve the DPC? Listen to THE Captain:
-    <a href="https://t.co/nBlmJw1S0G" target="_blank">https://t.co/nBlmJw1S0G</a>”`,
-    twitter: "SVGDota",
+    inGameName: "Khezu",
+    realName: "Maurice Guttmann",
+    playerRole: "Offlane/Pos 3/Captain",
+    memberPic: khezu.default,
+    details: `“Shoutout to all the 4's and 5's that are chill”`,
+    twitter: "KheZu",
   },
   {
-    inGameName: "MSS",
-    realName: "Arif Anwar",
+    inGameName: "PONLO",
+    realName: "Remus Goh",
+    playerRole: "Support/Pos 5",
+    memberPic: ponlo.default,
+    details: `A newly minted member of the 10K MMR club. Congrats Ponlo.`,
+    twitter: "ponlodota",
+  },
+  {
+    inGameName: "MILAN",
+    realName: "Milan Kozomara",
     playerRole: "Support/Pos 4",
-    memberPic: mss.default,
-    details: `“Dota. Gym. Anime. Repeat.”`,
-    twitter: "MSSDota",
+    memberPic: milan.default,
+    details: `Actual “OG,” Milan is the first Bosnian player to ever play a TI.`,
+    twitter: "milandota2",
   },
   {
     inGameName: "QUINN",
@@ -35,14 +41,6 @@ const players = [
     twitter: "ccncdota2",
   },
   {
-    inGameName: "LESLAO",
-    realName: "Rodrigo Santos",
-    playerRole: "Offlaner/Pos 3",
-    memberPic: leslao.default,
-    details: `"Duo language speaker (portugese, english) and BASED guitarist."`,
-    twitter: "lelisdota",
-  },
-  {
     inGameName: "YAWAR",
     realName: "Yawar Hassan",
     playerRole: "Safelane Carry/Pos 1",
@@ -50,14 +48,7 @@ const players = [
     details: `“@OG @SumaaaaiL is YawaR's brother, not the other way around.”`,
     twitter: `YawaR_YS`,
   },
-  {
-    inGameName: "Khezu",
-    realName: "Khezu",
-    playerRole: "Coach",
-    memberPic: khezu.default,
-    details: `“Shoutout to all the 4's and 5's that are chill”`,
-    twitter: "KheZu",
-  },
+
   {
     inGameName: "KBBQ",
     realName: "Jack Chen",
@@ -68,22 +59,22 @@ const players = [
   },
 ];
 const cardBaseConstractor = players.map((plr, index) => {
-  if (index < 2 || index > 4) {
-    return `
-    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
+  // if (index < 2 || index > 4) {
+  //   return `
+  //   <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
+  //   <div class="cards">
+  //   <div class="cardFront" id="${plr.inGameName}">
+  //       <img src="${plr.memberPic}" alt="" class="playerImg img-fluid">
+  //   </div>
+  // </div>`;
+  // } else {
+  return `<div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
     <div class="cards">
     <div class="cardFront" id="${plr.inGameName}">
         <img src="${plr.memberPic}" alt="" class="playerImg img-fluid">
     </div>
   </div>`;
-  } else {
-    return `<div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
-    <div class="cards">
-    <div class="cardFront" id="${plr.inGameName}">
-        <img src="${plr.memberPic}" alt="" class="playerImg img-fluid">
-    </div>
-  </div>`;
-  }
+  // }
 });
 cardBaseConstractor.forEach((card) => (cardHolder.innerHTML += card));
 
@@ -103,7 +94,7 @@ function generateModal(itemData) {
   playerRoleModal1.textContent = itemData.playerRole;
   playerImgModal1.src = itemData.memberPic;
   details.innerHTML = itemData.details;
-  twitter.src = `https://twitter.com/${itemData.twitter}`;
+  twitter.href = `https://twitter.com/${itemData.twitter}`;
   twitter.innerHTML = `<i class="fa fa-twitter fa-2x text-primary"><span class="text-white h4 twitter-font">@${itemData.twitter}</span>`;
 }
 cardBase.forEach((card, index) => {
