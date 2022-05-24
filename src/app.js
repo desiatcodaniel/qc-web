@@ -1,36 +1,36 @@
-import * as ponlo from "./images/PONLO.png";
-import * as milan from "./images/MILAN.png";
+import * as fata from "./images/FATA.png";
+import * as mss from "./images/MSS.png";
 import * as quinn from "./images/NEW_QUINN.png";
 import * as yawar from "./images/NEW_YAWAR.png";
-import * as khezu from "./images/NEW_KHEZU.png";
+import * as leslao from "./images/LESLAO.png";
 import * as kbbq from "./images/KBBQ.png";
 
 const cardHolder = document.querySelector("#cardHolder");
 
 const players = [
   {
-    inGameName: "Khezu",
-    realName: "Maurice Guttmann",
-    playerRole: "Offlane/Pos 3/Captain",
-    memberPic: khezu.default,
-    details: `“Shoutout to all the 4's and 5's that are chill”`,
-    twitter: "KheZu",
+    inGameName: "FATA",
+    realName: "Adrian Trinks",
+    playerRole: "Support/Pos 5/Captain",
+    memberPic: fata.default,
+    details: `"Actually GODLIKE - he is the all time leader in professional wins (32) as Zeus"`,
+    twitter: "DotaFata",
   },
   {
-    inGameName: "PONLO",
-    realName: "Remus Goh",
-    playerRole: "Support/Pos 5",
-    memberPic: ponlo.default,
-    details: `A newly minted member of the 10K MMR club. Congrats Ponlo.`,
-    twitter: "ponlodota",
-  },
-  {
-    inGameName: "MILAN",
-    realName: "Milan Kozomara",
+    inGameName: "MSS",
+    realName: "Arif Anwar",
     playerRole: "Support/Pos 4",
-    memberPic: milan.default,
-    details: `Actual “OG,” Milan is the first Bosnian player to ever play a TI.`,
-    twitter: "milandota2",
+    memberPic: mss.default,
+    details: `“Dota. Gym. Anime. Repeat.”`,
+    twitter: "MSSDota",
+  },
+  {
+    inGameName: "LESLAO",
+    realName: "Rodrigo Santos",
+    playerRole: "Offlaner/Pos 3",
+    memberPic: leslao.default,
+    details: `"Duo language speaker (portugese, english) and BASED guitarist."`,
+    twitter: "lelisdota",
   },
   {
     inGameName: "QUINN",
